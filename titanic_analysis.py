@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# 1. LOAD DATASET
 
 data = pd.DataFrame()
 
@@ -23,7 +22,7 @@ def load_data():
         print("File not found! Check titanic.csv location.")
 
 
-# 2. EXPLORE DATA
+
 
 def explore_data():
 
@@ -46,8 +45,6 @@ def explore_data():
     print("\nStatistical Description:")
     print(data.describe())
 
-
-# 3. CLEAN DATA
 
 def clean_data():
 
@@ -78,7 +75,6 @@ def clean_data():
     print(data.isnull().sum())
 
 
-# 4. SURVIVAL ANALYSIS
 
 def survival_analysis():
 
@@ -110,7 +106,7 @@ def survival_analysis():
     print(data["Fare"].mean())
 
 
-# 5. NUMPY OPERATIONS
+
 
 def numpy_analysis():
 
@@ -137,7 +133,7 @@ def numpy_analysis():
     print("Variance:", np.var(age_array))
 
 
-# 6. DATA VISUALIZATION
+
 
 def visualization():
 
@@ -220,7 +216,6 @@ def visualization():
     plt.show()
 
 
-# 7. SAVE CLEANED DATA
 
 def save_data():
 
@@ -233,7 +228,7 @@ def save_data():
     print("\nCleaned dataset saved successfully!")
 
 
-# 8. MAIN MENU
+
 
 while True:
 
